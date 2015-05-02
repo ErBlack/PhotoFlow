@@ -1,0 +1,67 @@
+@CHARSET "UTF-8";
+
+ul, li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* $base */
+.gallery {
+	margin: 0 auto;
+	background: gray;
+	width: 50%;
+	padding-bottom: 10px;
+	position: relative;
+}
+.gallery > img {
+	position: absolute;
+	margin: auto;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+}
+.gallery .portrait {
+	height: 100%;
+}
+.gallery .landscape {
+	height: 100%;
+}
+.gallery.preview .grid {
+	opacity: .5;
+}
+.grid {
+	display: block;
+	overflow: hidden;
+	width: 100%;
+	transition: opacity 1s ease; 
+}
+.grid > li {
+	display: block;
+	height: 100px;
+	position: relative;
+}
+
+.wflow {
+	position: relative;
+	white-space: nowrap;
+	overflow: hidden;
+	margin: 10px;
+	height: 100%;
+	white-space: 0;
+	font-size: 0;
+}
+
+.wflow > li,
+.wflow > li > img {
+	height: 100%;
+	width: auto;
+}
+
+.wflow > li {
+	display: inline-block;
+	overflow: hidden;
+	text-align: center;
+	padding: 0 5px;
+}
